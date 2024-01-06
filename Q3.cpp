@@ -1,19 +1,21 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-    int t,n;
-    cout<<"How many numbers do you want to test?\n";
-    cin>>t;
-    for(int i=1; i<=t; i++)
+    int height;
+    cout<<"enter height\n";
+    cin>>height;
+    for(int i=1; i<=height;i++)
     {
-        cout<<"Enter your number\n";
-        cin>>n;
-        for(int j=2; j<n; j++)
+        for(int j=1; j<=height-i;j++)
         {
-            if(n%j==0) {cout<<"Not prime\n"; break;}
-            else if(n%j!=0 && j==n-1) {cout<<"Prime \n";}
+            cout<<" ";
         }
+        for(int k=1; k<=i; k++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
     }
     return 0;
 }
