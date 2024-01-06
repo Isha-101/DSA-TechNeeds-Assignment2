@@ -1,16 +1,17 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-    int n;
-    cout << "Input";
-    cin >> n;
-    for (int i = 1; i <= n; i++)
+    int height;
+    cout<<"Enter no of rows of triangle: \n";
+    cin>>height;
+    for(int i=1;i<=height;i++)
     {
-        for (int j = 1; j <= i; j++)
+        for(int j=1; j<=i;j++)
         {
-            cout << "*";
+            cout<<"*";
         }
-        cout << endl;
+        cout<<endl;
     }
+    return 0;
 }
