@@ -1,20 +1,21 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-    int n;
-    cout << "Input";
-    cin >> n;
-    for (int i = 1; i <= n; i++)
+    int h;
+    cout<<"Enter height\n";
+    cin>>h;
+    for(int i=1; i<=h; i++)
     {
-        for (int s = 1; s <= i; s++)
+        for(int j=1; j<=i-1; j++)
         {
-            cout << " ";
+            cout<<" ";
         }
-        for (int j = n; j >= i; j--)
+        for(int k=1; k<=h+1-i; k++)
         {
-            cout << "*";
+            cout<<"*";
         }
-        cout << endl;
+        cout<<endl;
     }
+  return 0;
 }
