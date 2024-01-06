@@ -2,13 +2,16 @@
 using namespace std;
 int main()
 {
-    int m;
-    cout<<" Enter your marks\n";
-    cin>>m;
-    if(m>90) { cout<<"Excellent\n";}
-    else if(m>80) { cout<<"Good\n";}
-    else if(m>70) { cout<<"Fair \n";}
-    else if(m>60) { cout<<"Meets expectations \n";}
-    else cout<<"Below Par\n";
+    int h;
+    cout<<"Enter height of pattern: \n";
+    cin>>h;
+    for(int i=1; i<=h; i++)
+    {
+        for(int j=0; j<=h-i;j++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
     return 0;
 }
